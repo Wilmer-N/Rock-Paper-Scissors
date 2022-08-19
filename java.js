@@ -1,4 +1,6 @@
 
+function game(){
+    for (let i = 0; i < 5; i++) {
 function randomNumbers(min, max){
 	return Math.round(Math.random() * (max - min)) + min;
 }
@@ -37,3 +39,7 @@ const playerSelection = prompt("choose").toLowerCase()
 const computerSelection = getComputerChoice(randomNumbers(1, 3));
 playRound(playerSelection, computerSelection);
 console.log(playRound(playerSelection, computerSelection))
+
+}}
+
+game()
